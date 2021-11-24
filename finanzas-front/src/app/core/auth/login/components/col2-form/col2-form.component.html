@@ -1,56 +1,53 @@
+<body >
+  <html>
 <div class="container">
-  <div class="container__body">
-    <h1>¡Vamos a iniciar sesion!</h1>
+  <div class="cuadro">
+    
+    <h1>R E G I S T R A R S E</h1>
+    <div id="uno"></div>
+    <img id="logo" src="assets/logo.jpeg" alt="">
+    <img id="foto"src="https://us.123rf.com/450wm/in8finity/in8finity1405/in8finity140500127/28294504-euro-icono-dinero-con-bolsa-en-el-fondo-negro-ilustraci%C3%B3n-vectorial-.jpg?ver=6" alt="">
+   
     <form [formGroup]="form" (ngSubmit)="submitLogin()">
-      <div class="">
-        <mat-form-field appearance="outline" class="container__input">
-          <mat-label>Correo Electrónico</mat-label>
-          <input
-            matInput
-            placeholder=""
-            autocomplete="off"
-            formControlName="email"
-            required
-          />
-          <mat-icon matSuffix class="color-primary">email</mat-icon>
-        </mat-form-field>
-      </div>
-      <div class="">
-        <mat-form-field appearance="outline" class="container__input">
-          <mat-label>Password</mat-label>
-          <input
-            matInput
-            placeholder=""
-            autocomplete="off"
-            type="password"
-            formControlName="password"
-            required
-          />
-          <mat-icon matSuffix class="color-primary">visibility</mat-icon>
-        </mat-form-field>
-      </div>
-      <div class="container__forget-password">Olvidé mi contraseña</div>
-      <div>
-        <button
-          mat-raised-button
-          color="primary"
-          class="container__button"
-          type="submit"
-        >
-          Ingresar mi cuenta
-        </button>
-      </div>
-    </form>
+      <div id="medio1">
+      <div id="medio">
+        <br>
+        <h1>R E G I S T R A R S E</h1>
+<br>
+<br>
 
-    <div>
-      <button
-        mat-stroked-button
-        color="primary"
-        class="container__button"
-        (click)="openDialog()"
-      >
-        Crear una cuenta
-      </button>
+
+        <label style="font-family:Georgia, 'Times New Roman', Times, serif;color:black;">Correo Electrónico</label>
+        <mat-form-field appearance="outline" class="container__input">
+          <input matInput placeholder=""   autocomplete="off" formControlName="email" required />
+          <mat-icon matSuffix class="color-primary"></mat-icon>
+        </mat-form-field>
+    
+        <br>
+        <br>
+
+
+
+      
+ 
+        <label style="font-family:Georgia, 'Times New Roman', Times, serif; color:black">Contraseña</label>
+        <mat-form-field  appearance="outline" class="container__input">     
+ <input matInput  placeholder="" autocomplete="off" type="password"  formControlName="password" required  />
+ <!-- la contraseña -->
+          <mat-icon matSuffix class></mat-icon>
+        </mat-form-field>
+      
+        <button  mat-raised-button  class="container__button" type="submit"  > INICIAR</button>
+      
+     <a (click)="openDialog()" style="color: blue; text-decoration: underline;">No tienes cuenta ? Crear una nueva </a>
     </div>
   </div>
+    </form>
+    
+  
+    
+  </div>
 </div>
+
+</html>
+</body>

@@ -34,6 +34,7 @@ export class NavbarComponent implements OnInit {
       if( this.localStorageId != null){
         this.menu = [
           { ruta: '/personProfiles', text: 'Inicio', icon: '', action:'' },
+          
           { ruta: '/personProfiles/letras', text: 'Letra', icon: '', action:'' },
           { ruta: '/personProfiles/facturas', text: 'Factura', icon: '', action:'' },
           { ruta: '/personProfiles/recibos', text: 'Recibo', icon: '', action:'' },

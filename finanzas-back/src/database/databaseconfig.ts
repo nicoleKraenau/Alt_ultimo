@@ -7,7 +7,7 @@ export const dbConnection = async() => {
             host: "localhost",
             port: 5432,
             username: "postgres",
-            password: "admin",
+            password: "1234",
             database: "finanzas",
             entities:["dist/src/models/**/*.js"],
             synchronize: true
