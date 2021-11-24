@@ -5,9 +5,10 @@ export const dbConnection = async() => {
         await createConnection({
             type: "postgres",
             host: "localhost",
+            //port: 8000,
             port: 5432,
             username: "postgres",
-            password: "admin",
+            password: "",
             database: "finanzas",
             entities:["dist/src/models/**/*.js"],
             synchronize: true

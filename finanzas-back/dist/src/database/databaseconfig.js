@@ -16,9 +16,10 @@ const dbConnection = () => __awaiter(void 0, void 0, void 0, function* () {
         yield (0, typeorm_1.createConnection)({
             type: "postgres",
             host: "localhost",
+            //port: 8000,
             port: 5432,
             username: "postgres",
-            password: "admin",
+            password: "",
             database: "finanzas",
             entities: ["dist/src/models/**/*.js"],
             synchronize: true
