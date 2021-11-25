@@ -35,21 +35,12 @@ export class ViewDataComponent implements OnInit {
   }
 
   public openDialogSave() {
-    Swal.fire({
-      title: '¿Quieres registrar la operación?',
-      text: 'Los calculos mostrados se guardarán en el listado',
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: '¡Si, quiero registrarlo!',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire(
-          '¡Esta operación se ha guardado exitosamente!',
-          'Podrás visualizarlo en la vista principal',
-          'success'
-        ).then(() => {
+   
+        Swal.fire({ title: 'Mostrar contenido en la seccion de Registro',
+
+        confirmButtonColor: 'green',
+        confirmButtonText: 'Registrar',
+  }).then((result) => {if (result.isConfirmed) {
           this.facturaService
           .createFactura({
             fechaEmision: this.dataModel.dataRequest.fechaEmision,
@@ -71,11 +62,10 @@ export class ViewDataComponent implements OnInit {
           })
           .subscribe((resp: IDocumentResponse) => {
             console.log('[[resp SAVE]]::', resp);
-
-            // this.router.navigate(['personProfiles']);
+                this.router.navigate(['personProfiles']);
 
           });
-        });
+      
       }
     });
   }

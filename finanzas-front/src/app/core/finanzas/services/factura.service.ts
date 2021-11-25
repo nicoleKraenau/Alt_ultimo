@@ -19,6 +19,7 @@ export class FacturaService {
     console.log('[request ingresado]:: ', form);
     return this.http.post<IDocumentResponse>(
       `${this.url_base}/honoraries`,
+      
       form
     );
   }

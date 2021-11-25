@@ -11,14 +11,13 @@ export const dbConnection = async() => {
             database: "finanzas",
             entities:["dist/src/models/**/*.js"],
             synchronize: true
-            // entities:["dist/src/models/**/*.js"],
-            // sysnchronize:true
+        
         });
-        console.log('BD connectada°°');
+        console.log('esta correcto');
         
     } catch (err) {
         console.log('err dbConnection: ',err);
-        throw new Error('Error a la hora de iniciar la BD')
+        throw new Error('no puedes ngresar a tu bd')
         
     }
 }

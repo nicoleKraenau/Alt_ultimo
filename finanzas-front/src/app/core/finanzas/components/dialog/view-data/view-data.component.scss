@@ -1,9 +1,25 @@
 .table-style {
   margin-right: 50px;
   padding-right: 30px;
-  padding-bottom: 10px;
+  
 }
-table#space {
-  border-collapse: separate;
-  border-spacing: 20px 10px;
+
+#boton{
+  color:rgb(255, 255, 255);
+  background-color: rgb(67, 67, 216);
+position: absolute;
+width: 10%;
+height: 5%;
+top:55%;
+left: 45%;
+border-radius: 20px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+font-size: 20px;
+}
+h1{
+  position: absolute;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 30px;
+  top:36%;
+left: 43%;
 }

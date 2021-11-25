@@ -83,10 +83,7 @@ export class LoginService {
       },
     });
 
-    Toast.fire({
-      icon: 'success',
-      title: '¡Bienvenido!',
-    });
+    
   }
 
   public logout() {
