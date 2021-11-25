@@ -1,43 +1,47 @@
-<div class="main">
+<body>
+  
+
+<div class=>
   <app-navbar></app-navbar>
 
   <div class="body__table">
     <div class="mat-elevation-z8">
-      <table ble mat-table [dataSource]="dataSource">
+      <div id="total">
+      <table style="background-color:  rgba(163, 162, 162, 0.596);; color:black ;  position: absolute; left :-1%; width: 95%;" ble mat-table [dataSource]="dataSource">
         <ng-container matColumnDef="id">
-          <th mat-header-cell *matHeaderCellDef>Id.</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>Id.</th>
           <td mat-cell *matCellDef="let element">{{ element.id  }}</td>
         </ng-container>
         <ng-container matColumnDef="fechaEmision">
-          <th mat-header-cell *matHeaderCellDef>F. Emision</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>F. Emision</th>
           <td mat-cell *matCellDef="let element">{{ element.fechaEmision | date: "MM/dd/yyyy"   }} </td>
         </ng-container>
         <ng-container matColumnDef="fechaPago">
-          <th mat-header-cell *matHeaderCellDef>F. Pago</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>F. Pago</th>
           <td mat-cell *matCellDef="let element">{{ element.fechaPago | date: "MM/dd/yyyy"   }}</td>
         </ng-container>
         <ng-container matColumnDef="fechaDescuento">
-          <th mat-header-cell *matHeaderCellDef>F. Descuento</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>F. Descuento</th>
           <td mat-cell *matCellDef="let element">
             {{ element.fechaDescuento | date: "MM/dd/yyyy"   }}
           </td>
         </ng-container>
         <ng-container matColumnDef="tea">
-          <th mat-header-cell *matHeaderCellDef>TEA</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>TEA</th>
           <td mat-cell *matCellDef="let element">
             {{ element.tasaEfectivaAnual  }}%
           </td>
         </ng-container>
 
         <ng-container matColumnDef="diasTranscurridos">
-          <th mat-header-cell *matHeaderCellDef>D.Trans</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>D.Trans</th>
           <td mat-cell *matCellDef="let element">
             {{ element.diasTranscurridos }}%
           </td>
         </ng-container>
 
         <ng-container matColumnDef="tasaEfectiva">
-          <th mat-header-cell *matHeaderCellDef>T.Efect</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>T.Efect</th>
           <td mat-cell *matCellDef="let element">
             {{ element.tasaEfectivaXdias }}%
           </td>
@@ -46,51 +50,51 @@
         <!-- | date: "MM/dd/yyyy" -->
 
          <ng-container matColumnDef="tasaDescontada">
-          <th mat-header-cell *matHeaderCellDef>T.Desc</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>T.Desc</th>
           <td mat-cell *matCellDef="let element">
             {{ element.tasaDescontada }}%
           </td>
         </ng-container>
 
         <ng-container matColumnDef="descuento">
-          <th mat-header-cell *matHeaderCellDef>Desc</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>Desc</th>
           <td mat-cell *matCellDef="let element">
             {{ element.descuentoTotal }}
           </td>
         </ng-container>
 
         <ng-container matColumnDef="retencion">
-          <th mat-header-cell *matHeaderCellDef>Retencion</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>Retencion</th>
           <td mat-cell *matCellDef="let element">
             {{ element.retencionInput }}
           </td>
         </ng-container>
         <ng-container matColumnDef="costesIniciales">
-          <th mat-header-cell *matHeaderCellDef>C.I</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>C.I</th>
           <td mat-cell *matCellDef="let element">{{ element.CyGI }}</td>
         </ng-container>
         <ng-container matColumnDef="valorNeto">
-          <th mat-header-cell *matHeaderCellDef>V.Neto</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>V.Neto</th>
           <td mat-cell *matCellDef="let element">{{ element.valorNeto }}</td>
         </ng-container>
         <ng-container matColumnDef="valorTotalRecibir">
-          <th mat-header-cell *matHeaderCellDef>V.T.Recibido</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>V.T.Recibido</th>
           <td mat-cell *matCellDef="let element">
             {{ element.valorTotalRecibirVR }}
           </td>
         </ng-container>
         <ng-container matColumnDef="costesFinales">
-          <th mat-header-cell *matHeaderCellDef>C.F</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>C.F</th>
           <td mat-cell *matCellDef="let element">{{ element.CyGF }}</td>
         </ng-container>
         <ng-container matColumnDef="ValorTotalEntregar">
-          <th mat-header-cell *matHeaderCellDef>V.T.Entregar</th>
+          <th style="color: blue;" mat-header-cell *matHeaderCellDef>V.T.Entregar</th>
           <td mat-cell *matCellDef="let element">
             {{ element.valorTotalEntregarVE }}
           </td>
         </ng-container>
         <ng-container matColumnDef="TCEA">
-          <th mat-header-cell *matHeaderCellDef>TCEA</th>
+          <th style="color: blue;" style="color: blue;" mat-header-cell *matHeaderCellDef>TCEA</th>
           <td mat-cell *matCellDef="let element">
             {{ element.tasaCosteEfectivaAnual }}%
           </td>
@@ -119,12 +123,9 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
       </table>
 
-      <mat-paginator
-        [pageSizeOptions]="[10, 20]"
-        showFirstLastButtons
-        aria-label="Select page of periodic elements"
-      >
-      </mat-paginator>
+      
     </div>
   </div>
 </div>
+</div>
+</body>

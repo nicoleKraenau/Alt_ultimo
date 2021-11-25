@@ -37,7 +37,7 @@ export class NavbarComponent implements OnInit {
           { ruta: '/personProfiles/letras', text: 'LETRA', icon: '', action:'' },
           { ruta: '/personProfiles/facturas', text: 'FACTURAS', icon: '', action:'' },
           { ruta: '/personProfiles/recibos', text: 'RECIBO', icon: '', action:'' },
-          { ruta: '/personProfiles', text: 'REGISTRO', icon: '', action:'' },
+           { ruta: '/personProfiles', text: 'REGISTRO', icon: '', action:'' },
           { ruta: '/auth/login', text: 'Cerrar sesión', icon: 'logout', action:'logout' },
          
         ];
