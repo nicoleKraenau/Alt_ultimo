@@ -1,4 +1,8 @@
+<body>
+  
+
 <div>
+
   <app-navbar></app-navbar>
   <div class="container__main">
     <form [formGroup]="form" #frmFactura="ngForm" (ngSubmit)="submit()">
@@ -6,8 +10,16 @@
         <div class="table-one">
           <div class="table-one__left">
             <div class="table-one__left__inputs">
-              <!--  -->
-              <h1 class="center">Datos</h1>
+ 
+
+
+
+
+
+              <div id=todo>
+              <div id=primero>
+                <br>
+              <h1 >  *Inserte datos requeridos*</h1>
               <mat-form-field appearance="outline" class="container__input" >
                 <mat-label>{{ title1 }} (dd/mm/aa)</mat-label>
                 <input
@@ -70,7 +82,7 @@
               <div
                 [ngClass]="{ 'table-two__left': selectedTasa === 'Nominal' }"
               >
-                <h1 class="center">Costes / Gatos Iniciales</h1>
+                <h2 class="center">Costes / Gatos Iniciales</h2>
                 <!-- Select Portes -->
                 <div class="">
                   <mat-form-field appearance="fill" class="container__input">
@@ -187,9 +199,11 @@
             </div>
             
           </div>
-          <div class="table-one__right">
+        </div>
+          
+          <div class="segundo">
             <div class="table-one__right__inputs">
-              <h1 class="center">Tasa y Plazo</h1>
+              <h3 class="center">Tasa y Plazo</h3>
               <div class="">
                 <mat-form-field appearance="outline" class="container__input">
                   <mat-label>Dias por año</mat-label>
@@ -197,6 +211,7 @@
                     [(value)]="selectedDiasxAnio"
                     (selectionChange)="selectOpt($event)"
                   >
+                
                     <mat-option
                       *ngFor="let item of listDiasxAnio"
                       [value]="item.id"
@@ -246,6 +261,7 @@
                   />
                 </mat-form-field>
               </div>
+            
               <ng-template #tasaNominalTemplate>
                 <div class="">
                   <mat-form-field appearance="outline" class="container__input">
@@ -308,7 +324,7 @@
 
               <!-- //* right -->
               <div class="table-two__right">
-                <h1 class="center">Costes / Gatos Finales</h1>
+                <h4 class="center">Costes / Gatos Finales</h4>
                 <!-- Select Portes -->
                 <div class="">
                   <mat-form-field appearance="fill" class="container__input">
@@ -370,7 +386,7 @@
                     Agregar
                   </a>
                 </div>
-
+              
                 <!-- mostrar table -->
                 <div class="body__table">
                   <div class="mat-elevation-z8">
@@ -430,18 +446,13 @@
         <!-- termina green -->
         <div></div>
       </div>
-      <div class="btn-div">
-        <button
-          mat-raised-button
-          color="primary"
-          class="container__button"
-          [disabled]="frmFactura.invalid"
-          type="submit"
-        >
-          Calcular
+     
+        <button id="insertar"mat-raised-button  color="primary"class="container__button" [disabled]="frmFactura.invalid" type="submit">
+         Insertar
         </button>
       </div>
     </form>
   </div>
 </div>
 
+</body>

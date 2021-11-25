@@ -15,18 +15,47 @@
         // grid-template-columns: repeat(2, 1fr);
       }
     }
-    .table-one__right {
-      .table-one__right__inputs {
-        // margin-top: 3px;
-        // background: cyan;
-        // display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-      }
-    }
+    
+    
   }
  
 }
-
+h1,h2{
+  color: blue;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 20px;
+}
+h3,h4{
+  color: rgb(110, 47, 192);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 20px;
+}
+#todo{
+  position:absolute;
+  height: 210%;
+  width: 50%;
+  background-color: white;
+  left: 24%;
+  border-radius: 20px;
+}
+body{
+  background-color: gray;
+  height: 250%;
+}
+#insertar{
+  position:absolute;
+  top: 200%;
+}
+#primero{
+  position:absolute;
+  left:25%;
+  
+}
+.segundo{
+position: absolute;
+top: 110%;
+left:35%;
+}
 table {
   width: 100%;
 }

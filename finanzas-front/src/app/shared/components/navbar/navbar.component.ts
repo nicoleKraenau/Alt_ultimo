@@ -33,12 +33,13 @@ export class NavbarComponent implements OnInit {
     this.store.select("ui").subscribe(resp => {
       if( this.localStorageId != null){
         this.menu = [
-          { ruta: '/personProfiles', text: 'Inicio', icon: '', action:'' },
-          
-          { ruta: '/personProfiles/letras', text: 'Letra', icon: '', action:'' },
-          { ruta: '/personProfiles/facturas', text: 'Factura', icon: '', action:'' },
-          { ruta: '/personProfiles/recibos', text: 'Recibo', icon: '', action:'' },
+         
+          { ruta: '/personProfiles/letras', text: 'LETRA', icon: '', action:'' },
+          { ruta: '/personProfiles/facturas', text: 'FACTURAS', icon: '', action:'' },
+          { ruta: '/personProfiles/recibos', text: 'RECIBO', icon: '', action:'' },
+          { ruta: '/personProfiles', text: 'REGISTRO', icon: '', action:'' },
           { ruta: '/auth/login', text: 'Cerrar sesión', icon: 'logout', action:'logout' },
+         
         ];
       }
     })
