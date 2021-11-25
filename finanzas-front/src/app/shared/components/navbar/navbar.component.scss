@@ -35,6 +35,22 @@
   }
 }
 #barra1{
+  position: absolute;
   background-color: rgb(0, 0, 0);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 10%;
+  top:0%;
+}
+#tasa{
+  position: absolute;
+  top:900%;
+  left: 96%;
+  z-index: 100;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 18px;
+}
+img{
+  position: absolute;
+  height: 120%;
+  
 }

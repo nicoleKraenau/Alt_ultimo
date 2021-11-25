@@ -17,6 +17,7 @@ import { Store } from '@ngrx/store';
   templateUrl: './factura.component.html',
   styleUrls: ['./factura.component.scss'],
 })
+
 export class FacturaComponent implements OnInit {
   public form!: FormGroup;
   dataSourceLeft!: MatTableDataSource<any>;
@@ -24,10 +25,10 @@ export class FacturaComponent implements OnInit {
   @ViewChild(MatPaginator) paginatorLeft!: MatPaginator;
   @ViewChild(MatPaginator) paginatorRight!: MatPaginator;
 
-  @Input() title1:any = "Fecha de Emisión";
+  @Input() title1:any = "Fecha de Realización";
   @Input() title2:any = "Fecha de Pago";
   @Input() title3:any = "Total Facturado";
-
+  @Input() title4:any = "Motivo";
   public selectedTasa: string = 'Efectiva';
 
   public selectedDiasxAnio: number = 360;
