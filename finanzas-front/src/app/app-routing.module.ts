@@ -8,11 +8,11 @@ import { ReciboComponent } from './core/finanzas/pages/recibo/recibo.component';
 import { HomeComponent } from './core/finanzas/pages/home/home.component';
 
 const routes: Routes = [
-  /* {
+   {
     path: '',
     component: LoginComponent,
     // pathMatch: 'full'
-  }, */
+  }, 
   {
     path: 'auth',
     loadChildren: () =>

@@ -34,8 +34,8 @@ export class NavbarComponent implements OnInit {
       if( this.localStorageId != null){
         this.menu = [
           { ruta: '/personProfiles', text: 'Inicio', icon: '', action:'' },
-          { ruta: '/personProfiles/letras', text: 'Letra', icon: '', action:'' },
-          { ruta: '/personProfiles/facturas', text: 'Factura', icon: '', action:'' },
+          { ruta: '/personProfiles/letras', text: 'Registro', icon: '', action:'' },
+          { ruta: '/personProfiles/facturas', text: 'R', icon: '', action:'' },
           { ruta: '/personProfiles/recibos', text: 'Recibo', icon: '', action:'' },
           { ruta: '/auth/login', text: 'Cerrar sesión', icon: 'logout', action:'logout' },
         ];
@@ -47,7 +47,7 @@ export class NavbarComponent implements OnInit {
   public selectTasa(opt: any) {
     console.log('selectTasa: ',opt.value);
     this.store.dispatch(setSelectedTasa({setSelectedTasa:opt.value}))
-    // localStorage.setItem('selectedTasa', this.selectedTasa);
+    localStorage.setItem('selectedTasa', this.selectedTasa);
     // this.router.navigateByUrl('http://localhost:4200/personProfiles/facturas');
   }
 

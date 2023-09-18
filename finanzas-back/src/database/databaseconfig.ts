@@ -8,8 +8,8 @@ export const dbConnection = async() => {
             //port: 8000,
             port: 5432,
             username: "postgres",
-            password: "",
-            database: "finanzas",
+            password: "123",
+            database: "prueba",
             entities:["dist/src/models/**/*.js"],
             synchronize: true
             // entities:["dist/src/models/**/*.js"],

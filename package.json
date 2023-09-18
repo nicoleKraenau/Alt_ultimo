@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.2"
+  },
+  "dependencies": {
+    "webpack": "^5.88.2"
+  }
+}

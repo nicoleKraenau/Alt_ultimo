@@ -114,5 +114,8 @@
       }
     }
   },
-  "defaultProject": "petcare"
+  "defaultProject": "petcare",
+  "cli": {
+    "analytics": "ad0950a2-0b2d-4616-9821-0fe0374d6427"
+  }
 }
